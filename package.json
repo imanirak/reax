@@ -1,9 +1,9 @@
 {
-	"name": "Reax",
+	"name": "reax/@config",
 	"version": "1.0.0",
 	"main": "index.js",
 	"repository": "https://github.com/imanirak/reax.git",
-	"author": "Karina <karinadgarces@gmail.com>",
+	"author": "imanirak <karinadgarces@gmail.com>",
 	"license": "MIT",
 	"private": true,
 	"workspaces": [
@@ -19,7 +19,6 @@
 		"dev": "concurrently --kill-others --handle-input -n client,server 'npm:start-client-dev' 'npm:start-server-dev'"
 	},
 	"dependencies": {
-		"concurrently": "^7.0.0",
-		"react-router-dom": "^6.2.2"
+		"concurrently": "^7.1.0"
 	}
 }
