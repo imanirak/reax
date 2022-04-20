@@ -1,7 +1,9 @@
-// **** External modules
-const express = require("express");
+
+const path = require("path")
 require("dotenv").config({path: "../.env"})
 
+// **** External modules
+const express = require("express");
 const cors = require("cors")
 
 //***** Internal Modules
@@ -10,17 +12,17 @@ const cors = require("cors")
 
 //**** Instanced Modules
 const app = express();
-
+const routes = require("./routes");
 
 //****Configs
 const config = require('@reax/config');
-const routes = require("./routes");
+
 
 //****middleware
 app.use(express.static(path.join("build")))
 // //this helps us read the body, req.body also works with Postman
 app.use(express.urlencoded({extended: true}))
-// //parse some json :)))
+
 app.use(express.json())
 app.use(cors())
 
