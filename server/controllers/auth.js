@@ -10,17 +10,18 @@ const register = async (req, res) => {
             email: req.body.email
         })
 
-        if(foundUser) {  
-            const updatedUser = await db.User.findByIdAndUpdate(
-                {
-                    _id: foundUser._id
-                },
-                {
-                    $set: { password: hash }
-                },
-                { new: true }
-            )
-            console.log("inside founduser if statement")
+        if(foundUser) {
+           
+            // const updatedUser = await db.User.findByIdAndUpdate(
+            //     {
+            //         _id: foundUser._id
+            //     },
+            //     {
+            //         $set: { password: hash }
+            //     },
+            //     { new: true }
+            //)
+            // console.log("inside founduser if statement")
             return res
                 .status
                 .json({ message: "Email in use."})
