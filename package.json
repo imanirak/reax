@@ -2,7 +2,7 @@
 	"name": "Reax",
 	"version": "1.0.0",
 	"main": "index.js",
-	"repository": "https://github.com/imanirak/monorepo.git",
+	"repository": "https://github.com/imanirak/reax.git",
 	"author": "Karina <karinadgarces@gmail.com>",
 	"license": "MIT",
 	"private": true,
@@ -20,7 +20,6 @@
 	},
 	"dependencies": {
 		"concurrently": "^7.0.0",
-		"dotenv": "^16.0.0",
 		"react-router-dom": "^6.2.2"
 	}
 }
