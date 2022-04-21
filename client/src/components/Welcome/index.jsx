@@ -4,7 +4,7 @@ import React from "react";
 const Welcome = () => {
 	return (
 		<div>
-			<h1>Welcome to MonoRepo Practice!</h1>
+			<h1>Reax</h1>
 		</div>
 	);
 };
